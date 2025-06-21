@@ -5,9 +5,9 @@
 {% load static %}
 {% block content %}
 
-<main class="relative">
+<main class="relative top-0 overflow-hidden">
   <!-- Hero Slider -->
-  <section class="h-screen"
+  <section class="h-screen "
     x-data="{ currentSlide: 0, slides: [
       '{% static 'images/bg-hero1.jpg' %}',
       '{% static 'images/bg-hero2.jpg' %}',
@@ -48,7 +48,7 @@
         <!-- Eksplor Gunung -->
         <div class="bg-white p-6 rounded-2xl shadow-lg w-full md:w-[35%] transform hover:scale-105 transition duration-300">
           <h3 class="text-xl font-bold text-gray-800 mb-2">
-            <a href="{% url 'gunung:daftar' %}">Eksplor Gunung</a>
+            <a href="{% url 'gunung:daftar' %}" class="bg-blue-400 text-white px-4 py-1 rounded-xl hover:bg-blue-600  transition duration-300 ease-in-out">Eksplor Gunung</a>
           </h3>
           <p class="text-gray-600">Cari tahu info gunung, jalur pendakian, cuaca, dan checklist alat yang direkomendasikan.</p>
         </div>
@@ -56,7 +56,7 @@
         <!-- Sewa Alat -->
         <div class="bg-white p-6 rounded-2xl shadow-lg w-full md:w-[35%] transform hover:scale-105 transition duration-300">
           <h3 class="text-xl font-bold text-gray-800 mb-2">
-            <a href="{% url 'toko:toko_leaflet_page' %}">Sewa Alat Pendakian</a>
+            <a href="{% url 'toko:toko_leaflet_page' %}" class="bg-blue-400 text-white px-4 py-1 rounded-xl hover:bg-blue-600  transition duration-300 ease-in-out">Sewa Alat Pendakian</a>
           </h3>
           <p class="text-gray-600">Butuh carrier, tenda, atau headlamp? Sewa alat langsung dari mitra terpercaya.</p>
         </div>
